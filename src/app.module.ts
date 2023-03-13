@@ -8,6 +8,8 @@ import { AppController } from './app.controller';
 import { MessagesController } from './messages/messages.controller';
 import { MessagesService } from './messages/messages.service';
 
+console.log(join(__dirname, '../..', 'client/build'))
+
 @Module({
     imports: [
         ConfigModule.forRoot({ isGlobal: true }),
