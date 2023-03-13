@@ -38,10 +38,5 @@ lerna-debug.log*
 *.env
 env
 
-/.client
-.client
-/client
-
-!/.client/build
-!.client/build
-!client/build
+# 
+/client-src
