@@ -2,7 +2,7 @@ import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { ServeStaticModule } from '@nestjs/serve-static';
-import { DbConfigModule } from 'db-config/db-config.module';
+import { DbConfigModule } from 'src/db-config/db-config.module';
 import { join } from 'path';
 import { AppController } from './app.controller';
 import { MessagesController } from './messages/messages.controller';
@@ -14,7 +14,7 @@ console.log(join(__dirname, '../..', 'client/build'))
     imports: [
         ConfigModule.forRoot({ isGlobal: true }),
         ServeStaticModule.forRoot({
-            rootPath: join(__dirname, '../..', 'client/build'),
+            rootPath: join(__dirname, '../', 'client/build'),
         }),
         HttpModule,
         DbConfigModule

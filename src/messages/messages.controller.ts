@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
-import { Message } from 'db-config/entities/message.entity';
+import { Message } from 'src/db-config/entities/message.entity';
 import { MessagesService } from './messages.service';
 import { NewMessageSubDto } from './dtos';
 

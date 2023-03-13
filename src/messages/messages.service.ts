@@ -1,6 +1,6 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
-import { Message } from 'db-config/entities/message.entity';
+import { Message } from 'src/db-config/entities/message.entity';
 import { FindManyOptions } from 'typeorm';
 
 @Injectable()
