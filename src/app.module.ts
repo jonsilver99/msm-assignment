@@ -11,12 +11,15 @@ import { MessagesService } from './messages/messages.service';
 console.log("---------------------------------------")
 console.log(join(__dirname, '../..', 'client/build'))
 console.log("---------------------------------------")
+console.log("---------------------------------------")
+console.log(join(__dirname, '../', 'client/build'))
+console.log("---------------------------------------")
 
 @Module({
     imports: [
         ConfigModule.forRoot({ isGlobal: true }),
         ServeStaticModule.forRoot({
-            rootPath: join(__dirname, '../..', 'client/build'),
+            rootPath: join(__dirname, '../', 'client/build'),
         }),
         HttpModule,
         DbConfigModule
