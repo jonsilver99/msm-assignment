@@ -8,12 +8,6 @@ import { AppController } from './app.controller';
 import { MessagesController } from './messages/messages.controller';
 import { MessagesService } from './messages/messages.service';
 
-console.log("---------------------------------------")
-console.log(join(__dirname, '../..', 'client/build'))
-console.log("---------------------------------------")
-console.log("---------------------------------------")
-console.log(join(__dirname, '../', 'client/build'))
-console.log("---------------------------------------")
 
 @Module({
     imports: [
