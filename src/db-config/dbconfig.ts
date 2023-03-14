@@ -2,17 +2,6 @@ import { SqlServerConnectionOptions } from 'typeorm/driver/sqlserver/SqlServerCo
 import { Message } from './entities/message.entity';
 
 export const typeOrmConfig = () => {
-
-    console.log(process.env.TWILIO_ACCOUNT)
-    console.log(process.env.TWILIO_TOKEN)
-    console.log(process.env.TWILIO_PHONE_NUM)
-    console.log(process.env.DB_HOST)
-    console.log(process.env.DB_PORT)
-    console.log(process.env.DB_USER)
-    console.log(process.env.DB_PASS)
-    console.log(process.env.DB_NAME)
-
-
     return {
         type: 'mssql',
         host: process.env.DB_HOST,
