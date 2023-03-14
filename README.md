@@ -7,4 +7,7 @@ with the provider through an api server.
 
 Built with react on a nest.js server.
 
+link to client source repo: https://github.com/jonsilver99/msm-assignment-client
+
 link to demo: https://msm-assignment.herokuapp.com/
+
