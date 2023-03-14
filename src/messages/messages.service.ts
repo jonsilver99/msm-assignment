@@ -48,7 +48,6 @@ export class MessagesService {
     }
 
     getAllMessages(skip, take): Promise<Message[]> {
-        console.log(skip, take)
         return Message.find(({ skip, take, order: { date: "DESC" } } as FindManyOptions))
     }
 
